@@ -13,8 +13,14 @@ title: About Me
 
 ## 👋 Welcome to my digital space
 
-I'm Sheep, a passionate full-stack developer and lifelong learner with a love for technology and innovation. This space is where I share insights and discoveries from my ever-evolving journey in software development.
+I'm Sheep, a third-year college student graduating in 2027, with a primary focus on frontend development while also learning backend technologies like Spring Boot. This space documents my learning journey and insights as I grow in software development.
 
-## 🚀 Professional Journey
+## 📚 Learning Journey
 
-With over 5 years of experience in the tech industry, I've had the privilege of working on diverse projects ranging from enterprise applications to innovative startups. My career has spanned multiple roles, each contributing to my growth as a well-rounded developer.
+As a current college student, I'm actively building my technical foundation and practical skills. While I don't have professional work experience yet, I've completed several learning projects and continue to expand my knowledge in various technologies.
+
+### Current Focus Areas
+- Frontend development with modern frameworks
+- Learning backend development with Spring Boot
+- Building personal projects to apply theoretical knowledge
+- Participating in coding communities and learning platforms
