@@ -1,0 +1,75 @@
+# Arabic menu configuration
+toggleMenu:
+    other: اخفي القائمة
+
+darkMode:
+    other: الوضع الداكن
+
+list:
+    page:
+        one: "{{ .Count }} صفحة"
+        other: "{{ .Count }} صفحات"
+    section:
+        other: قسم
+    subsection:
+        one: قسم فرعي
+        other: أقسام فرعية
+
+article:
+    back:
+        other: رجوع
+    tableOfContents:
+        other: جدول المحتويات
+    relatedContent:
+        other: محتوى ذو صلة
+    lastUpdatedOn:
+        other: آخر تحديث في
+    readingTime:
+        one: "{{ .Count }} دقيقة للقراءة"
+        other: "{{ .Count }} دقيقة للقراءة"
+
+notFound:
+    title:
+        other: غير موجود
+    subtitle:
+        other: هذه الصفحة غير موجودة
+
+widget:
+    archives:
+        title:
+            other: الأرشيف
+        more:
+            other: المزيد
+    tagCloud:
+        title:
+            other: الوسوم
+    categoriesCloud:
+        title:
+            other: التصنيفات
+
+search:
+    title:
+        other: بحث
+    placeholder:
+        other: اكتب شيئًا...
+    resultTitle:
+        other: "#PAGES_COUNT نتيجة (#TIME_SECONDS ثانية)"
+
+footer:
+    builtWith:
+        other: تم إنشاءه باستخدام {{ .Generator }}
+    designedBy:
+        other: تم تصميم القالب {{ .Theme }} بواسطة {{ .DesignedBy }}
+
+# Custom menu items
+menu:
+    home:
+        other: الرئيسية
+    about:
+        other: حول
+    archives:
+        other: الأرشيف
+    search:
+        other: بحث
+    links:
+        other: روابط

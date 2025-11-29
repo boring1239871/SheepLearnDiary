@@ -1,0 +1,179 @@
+baseURL: 'http://localhost:1313/'
+languageCode: 'zh-cn'
+defaultContentLanguage: 'zh-cn'
+title: 'Sheep'
+theme: 'hugo-theme-stack'
+
+# 多语言支持
+languages:
+  zh-cn:
+    languageName: '中文'
+    weight: 1
+    title: 'SheepLearn Dairy'
+    params:
+      sidebar:
+        subtitle: '技术分享与学习笔记'
+      mainSections: ['post']
+      widgets:
+        homepage:
+          - type: search
+          - type: archives
+            params:
+              limit: 5
+          - type: categories
+            params:
+              limit: 10
+          - type: tag-cloud
+            params:
+              limit: 20
+        page:
+          - type: toc
+  en:
+    languageName: 'English'
+    weight: 2
+    title: 'SheepLearn Dairy'
+    params:
+      sidebar:
+        subtitle: 'Technology Sharing & Learning Notes'
+      mainSections: ['post']
+      widgets:
+        homepage:
+          - type: search
+          - type: archives
+            params:
+              limit: 5
+          - type: categories
+            params:
+              limit: 10
+          - type: tag-cloud
+            params:
+              limit: 20
+        page:
+          - type: toc
+  ar:
+    languageName: 'العربية'
+    weight: 3
+    title: 'SheepLearn Dairy'
+    params:
+      sidebar:
+        subtitle: 'مشاركة التكنولوجيا وملاحظات التعلم'
+      mainSections: ['post']
+      widgets:
+        homepage:
+          - type: search
+          - type: archives
+            params:
+              limit: 5
+          - type: categories
+            params:
+              limit: 10
+          - type: tag-cloud
+            params:
+              limit: 20
+        page:
+          - type: toc
+
+# 服务配置
+services:
+  googleAnalytics:
+    ID: ''
+  rss:
+    fullSource: false
+
+# 分页配置
+pagination:
+  perPage: 10
+
+# 永久链接配置
+permalinks:
+  post: '/p/:slug/'
+
+# 参数设置
+params:
+  # 主页配置 - 显示文章列表
+  mainSections: ['post']
+  
+  # 头像配置
+  avatar:
+    enabled: true
+    src: 'img/avatar.png'
+  
+  # 侧边栏配置
+  sidebar:
+    compact: false
+    emoji: 🐑
+    subtitle: "技术分享与学习笔记"
+    avatar:
+      enabled: true
+      local: true
+      src: img/avatar.png
+  
+  # 主题配置
+  themeColor:
+    enabled: false
+    hugo:
+      dark: '#191919'
+      light: '#ffffff'
+  
+  # 侧边栏配置 - 使用widgets组件
+  widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+      - type: categories
+        params:
+          limit: 10
+      - type: tag-cloud
+        params:
+          limit: 20
+    page:
+      - type: toc
+  
+  # 文章配置
+  article:
+    readingTime: true
+    license:
+      enabled: true
+      default: 'CC BY-NC 4.0'
+  
+  # 评论配置
+  comment:
+    enabled: false
+  
+  # 代码块配置
+  code:
+    copyButton:
+      enabled: true
+    highlightInArticle: true
+  
+  # 页脚配置
+  footer:
+    since: 2024
+    customText: ''
+    
+# 开放图谱设置
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+
+# 相关文章设置
+related:
+  includeNewer: true
+  threshold: 60
+  toLower: false
+  indices:
+    - name: tags
+      weight: 10
+    - name: categories
+      weight: 5
+
+# 标记配置
+taxonomies:
+  category: categories
+  tag: tags

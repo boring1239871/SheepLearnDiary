@@ -1,0 +1,37 @@
+/* 主页自定义样式 */
+.home-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status-updates .status-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--body-bg);
+    border-radius: 8px;
+}
+
+.status-item .date {
+    font-weight: bold;
+    color: var(--primary-color);
+    min-width: 100px;
+}
+
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.tech-category {
+    padding: 1.5rem;
+    background: var(--body-bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
